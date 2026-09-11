@@ -19,19 +19,9 @@ export function FinalCta() {
           <div className="mt-9 flex flex-col items-center justify-center gap-3 sm:flex-row">
             <a
               href={studio.bookingUrl}
-              target="_blank"
-              rel="noopener noreferrer"
               className="inline-flex items-center justify-center rounded-full bg-background px-8 py-4 text-sm font-medium text-foreground transition-opacity hover:opacity-90"
             >
               Записаться онлайн
-            </a>
-            <a
-              href={studio.whatsappUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center justify-center rounded-full border border-primary-foreground/30 px-8 py-4 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary-foreground/10"
-            >
-              Написать в WhatsApp
             </a>
           </div>
         </div>

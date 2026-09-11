@@ -24,7 +24,7 @@ export function About() {
           </h2>
           <div className="mt-6 space-y-4 text-pretty leading-relaxed text-muted-foreground">
             <p>
-              Beauty Studio Emmi — уютная студия красоты в самом сердце Солнечногорска. Уже много
+              Beauty Studio Emmi — уютная студия красоты в самом сердце города. Уже много
               лет мы помогаем тысячам женщин чувствовать себя увереннее и красивее.
             </p>
             <p>

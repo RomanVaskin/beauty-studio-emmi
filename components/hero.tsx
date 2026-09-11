@@ -7,7 +7,7 @@ export function Hero() {
         <div className="max-w-xl">
           <p className="mb-6 flex items-center gap-3 text-[0.7rem] uppercase tracking-luxe text-accent">
             <span className="h-px w-8 bg-accent" />
-            Салон красоты · {studio.city}
+            Салон красоты
           </p>
           <h1 className="text-balance font-serif text-[2.7rem] font-medium leading-[1.02] text-foreground sm:text-6xl lg:text-7xl">
             Ваша красота — в надёжных руках Emmi

@@ -7,7 +7,7 @@ export function SiteFooter() {
         <div>
           <p className="font-serif text-2xl font-semibold text-foreground">Beauty Studio Emmi</p>
           <p className="mt-3 max-w-xs text-sm leading-relaxed text-muted-foreground">
-            Салон красоты в Солнечногорске. Волосы, ногти, макияж, брови и ресницы.
+            Салон красоты. Волосы, ногти, макияж, брови и ресницы.
           </p>
         </div>
 
@@ -20,6 +20,11 @@ export function SiteFooter() {
                 {studio.phoneDisplay}
               </a>
             </li>
+            <li>
+              <a href={`mailto:${studio.email}`} className="hover:text-accent">
+                {studio.email}
+              </a>
+            </li>
           </ul>
         </div>
 
@@ -27,18 +32,8 @@ export function SiteFooter() {
           <p className="text-[0.7rem] uppercase tracking-luxe text-muted-foreground">Запись</p>
           <ul className="mt-4 space-y-2 text-sm text-foreground">
             <li>
-              <a href={studio.bookingUrl} target="_blank" rel="noopener noreferrer" className="hover:text-accent">
+              <a href={studio.bookingUrl} className="hover:text-accent">
                 Онлайн-запись
-              </a>
-            </li>
-            <li>
-              <a href={studio.whatsappUrl} target="_blank" rel="noopener noreferrer" className="hover:text-accent">
-                WhatsApp
-              </a>
-            </li>
-            <li>
-              <a href={studio.telegramUrl} target="_blank" rel="noopener noreferrer" className="hover:text-accent">
-                Telegram
               </a>
             </li>
           </ul>
@@ -48,7 +43,7 @@ export function SiteFooter() {
       <div className="border-t border-border/60">
         <div className="mx-auto flex max-w-6xl flex-col gap-2 px-5 py-6 text-xs text-muted-foreground sm:flex-row sm:items-center sm:justify-between lg:px-8">
           <p>© {new Date().getFullYear()} Beauty Studio Emmi. Все права защищены.</p>
-          <p>Солнечногорск · с любовью к красоте</p>
+          <p>С любовью к красоте</p>
         </div>
       </div>
     </footer>

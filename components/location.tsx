@@ -18,14 +18,6 @@ export function Location() {
               <p className="mt-3 font-serif text-2xl leading-snug text-foreground">
                 {studio.address}
               </p>
-              <a
-                href={studio.mapUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-4 inline-flex text-sm text-foreground underline underline-offset-4 hover:text-accent"
-              >
-                Открыть в Яндекс.Картах →
-              </a>
             </div>
 
             <div className="rounded-3xl border border-border/60 bg-card p-7 md:p-8">
@@ -40,7 +32,7 @@ export function Location() {
               </ul>
             </div>
 
-            <div className="grid grid-cols-1 gap-3 sm:grid-cols-3">
+            <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
               <a
                 href={studio.phoneHref}
                 className="rounded-2xl border border-border/60 bg-card px-5 py-4 text-center transition-colors hover:bg-secondary"
@@ -53,37 +45,24 @@ export function Location() {
                 </span>
               </a>
               <a
-                href={studio.whatsappUrl}
-                target="_blank"
-                rel="noopener noreferrer"
+                href={`mailto:${studio.email}`}
                 className="rounded-2xl border border-border/60 bg-card px-5 py-4 text-center transition-colors hover:bg-secondary"
               >
                 <span className="block text-[0.7rem] uppercase tracking-luxe text-muted-foreground">
-                  Мессенджер
+                  Email
                 </span>
-                <span className="mt-1 block text-sm font-medium text-foreground">WhatsApp</span>
-              </a>
-              <a
-                href={studio.telegramUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="rounded-2xl border border-border/60 bg-card px-5 py-4 text-center transition-colors hover:bg-secondary"
-              >
-                <span className="block text-[0.7rem] uppercase tracking-luxe text-muted-foreground">
-                  Мессенджер
+                <span className="mt-1 block text-sm font-medium text-foreground">
+                  {studio.email}
                 </span>
-                <span className="mt-1 block text-sm font-medium text-foreground">Telegram</span>
               </a>
             </div>
           </div>
 
           <div className="min-h-[360px] overflow-hidden rounded-3xl border border-border/60 lg:min-h-full">
-            <iframe
-              title={`Карта — ${studio.address}`}
-              src={studio.mapEmbedUrl}
-              className="h-full min-h-[360px] w-full"
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
+            <img
+              src="/placeholder.svg"
+              alt="Демонстрационная карта расположения студии"
+              className="h-full min-h-[360px] w-full object-cover"
             />
           </div>
         </div>
